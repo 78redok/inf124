@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel = "stylesheet" href = "style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tenzo and Richard's Store</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#hamburger').click(function(){
+                $('ul').toggleClass('show');
+            });
+        });
+    </script>
+    <link rel="icon" href="https://www.nicepng.com/png/full/96-961724_svg-transparent-download-dog-s-by-seng-hoong.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="mainlogo.png" alt="logo">
+            <ul>
+                <li><a href = "index.html">Home</a></li>
+                <li class = "current"><a href = "about.html">About Our Company</a></li>
+                <li><a href = "products.html">Products</a></li>
+                <li><a href = "checkout.html">Check Out</a></li>
+            </ul>
+            <label id="hamburger">
+                <i class="fas fa-bars"></i>
+            </label>
+        </nav>
+    </header>
+    <section id="aboutmain">
+    <h1>ABOUT OUR COMPANY</h1>
+    <h2>About Tenzo and Richard</h2>
+    <p1>Tenzo and Richard started this company with hopes to pass inf124's first assignment.</p1>
+    <h2></h2>
+    </section>
+</body>
+</html>

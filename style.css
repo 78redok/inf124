@@ -1,0 +1,161 @@
+/* NAVIGATION BAR */
+/* navigation bar color */
+nav{
+    height: 80px;
+    width: 100%;
+    background: #000000;
+}
+
+/* image logo */
+nav img{
+    height: auto;
+    width: 250px;
+    padding-top: 5px;
+    padding-left: 35px;
+}
+
+/* unordered list float right */
+nav ul{
+    float: right;
+    margin-right: 80px;
+}
+
+/* list of page links */
+nav li{
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 80px;
+}
+
+/* links to other pages */
+nav a{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    padding: 7px 10px;
+    border-radius: 3px;
+}
+/* all element margin */
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* solid white border when hovering over menu items */
+a.current, a:hover{
+    border: 1px solid white;
+    transition: .5s;
+    background-color: rgb(67, 50, 50);
+}
+
+/* hamburger hide/show for menu */
+nav #hamburger{
+    color: white;
+    font-size: 30px;
+    line-height: 80px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+@media (max-width: 1302px) {
+    nav #hamburger{
+        visibility: visible;
+        opacity: 1;
+    }
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(51, 50, 50);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav a{
+        font-size: 20px;
+    }
+    a.active, a:hover{
+        border: 1px solid white;
+        transition: .5s;
+        background-color: rgb(67, 50, 50);
+    }
+    nav ul.show{
+        left: 0;
+    }
+}
+/* THIS WAS NAVIGATION BAR */
+
+/* HOMEPAGE */
+/* background image */
+
+#mainintroduction{
+    min-height: 400px;
+    background:url('mariobg.jpeg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    color: #ffffff;
+    padding-bottom: 80px;
+    border-bottom: #000000 5px solid;
+}
+
+#mainintroduction h1{
+    padding-top: 30px;
+    font-size: 55px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+#mainintroduction p1{
+    font-size: 20px;
+    color: #ffffff;
+}
+
+@media (max-width: 800px) {
+    #mainintroduction h1{
+        font-size: 35px;
+    }
+    #mainintroduction p1{
+        font-size: 15px;
+    }
+}
+/* HOMEPAGE */
+
+/* PRODUCTS */
+/*main categories*/
+#productcontainer{
+    width: 90%;
+    margin-top: 60px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.product-cat img{
+    max-width:100%;
+    }
+
+.product-cat{
+    width:50%;
+    display:block;
+    float: left;
+}
+    
+@media screen and (min-width:450px) {
+    .product-cat{
+        width:33.3%;
+        display:block;
+        float: left;
+    }
+}
