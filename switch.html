@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel = "stylesheet" href = "style.css">
+    <link rel = "stylesheet" href= "https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tenzo and Richard's Store</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#hamburger').click(function(){
+                $('ul').toggleClass('show');
+            });
+        });
+
+        function myFunction(email, quantity, productname, firstname, lastname, address) {
+            var x = email;
+            var y = quantity;
+            var z = productname;
+            var a = firstname;
+            var b = lastname;
+            var c = address;
+            window.open("mailto:"+x+'?subject=Thank you for ordering, '+a+ ' ' +b+'!'+'&body=Your order is for '+z+'%0D%0Aand the quantity you ordered is '+y+'.'+'%0D%0AYour shipping address is '+c +'%0D%0AThank you again for your purchase!');
+        }
+    </script>
+    <link rel="icon" href="https://www.nicepng.com/png/full/96-961724_svg-transparent-download-dog-s-by-seng-hoong.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="mainlogo.png" alt="logo">
+            <ul>
+                <li><a href = "index.html">Home</a></li>
+                <li><a href = "about.html">About Our Company</a></li>
+                <li class = "current"><a href = "products.html">Products</a></li>
+                <li><a href = "checkout.html">Check Out</a></li>
+            </ul>
+            <label id="hamburger">
+                <i class="fas fa-bars"></i>
+            </label>
+        </nav>
+    </header>
+
+
+    <div class="switchsection">
+        <div class="cards">
+            <div class="switch-products">
+                <h1>Nintendo Switch Products</h1>
+            </div>
+            <div class="card">
+                <div class="image-section">
+                    <a href="#popupkart">
+                    <img src="./switch/kart.jpeg" alt="Mario Kart">
+                    </a>
+                </div>
+                <div class="description">
+                    <h1>Mario Kart</h1>
+                    <p><b>Price</b><span>$59.99</span><del>$69.99</del></p>
+                </div>
+                <div class="button-group">
+                    <a href="#popupkart" class="buy">Buy</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-section">
+                    <a href="#popupkirby">
+                    <img src="./switch/kirby.jpeg" alt="Kirby">
+                    </a>
+                </div>
+                <div class="description">
+                    <h1>Kirby</h1>
+                    <p><b>Price</b><span>$59.99</span><del>$69.99</del></p>
+                </div>
+                <div class="button-group">
+                    <a href="#popupkirby" class="buy">Buy</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-section">
+                    <img src="./switch/mario.jpeg" alt="Mario">
+                </div>
+                <div class="description">
+                    <h1>Mario</h1>
+                    <p><b>Price</b><span>$59.99</span><del>$69.99</del></p>
+                </div>
+                <div class="button-group">
+                    <a href="" class="buy">Buy</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-section">
+                    <img src="./switch/pokemon.jpeg" alt="Pokemon">
+                </div>
+                <div class="description">
+                    <h1>Pokemon</h1>
+                    <p><b>Price</b><span>$59.99</span><del>$69.99</del></p>
+                </div>
+                <div class="button-group">
+                    <a href="" class="buy">Buy</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-section">
+                    <img src="./switch/starwars.jpeg" alt="Star Wars">
+                </div>
+                <div class="description">
+                    <h1>Star Wars</h1>
+                    <p><b>Price</b><span>$59.99</span><del>$69.99</del></p>
+                </div>
+                <div class="button-group">
+                    <a href="" class="buy">Buy</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-section">
+                    <img src="./switch/zelda.jpeg" alt="Zelda">
+                </div>
+                <div class="description">
+                    <h1>Zelda</h1>
+                    <p><b>Price</b><span>$59.99</span><del>$69.99</del></p>
+                </div>
+                <div class="button-group">
+                    <a href="" class="buy">Buy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay" id="popupkart">
+        <div class="wrapper">
+            <h2 id="productNamekart">Mario Kart</h2>
+            <p1>This game is a yada yada yada</p1>
+            <a href="#" class="close">&times;</a>
+            <div class="content">
+                <div class="container">
+                    <form id="myForm" onsubmit="myFunction(document.getElementById('emailkart').value, document.getElementById('quantitykart').value, document.getElementById('productNamekart').innerHTML, document.getElementById('firstNamekart').value, document.getElementById('lastNamekart').value, document.getElementById('shippingAddresskart').value)">
+                        </id>
+                        <label>Quantity</label>
+                        <input type="number" id ="quantitykart" min = "1" max = "10" placeholder="Min = 1 Max = 10" required>
+                        <label>First Name</label>
+                        <input type="text" id = "firstNamekart" placeholder = "Your First Name" required>
+                        <label>Last Name</label>
+                        <input type="text" id = "lastNamekart" placeholder = "Your Last Name" required>
+                        <label>Phone Number</label>
+                        <input type="tel" placeholder = "Phone Number" required>
+                        <label>Shipping Address(Address/City/State)</label>
+                        <input type="text" id = "shippingAddresskart" placeholder = "Address" required>
+                        <label>Zip Code</label>
+                        <input type="text" placeholder = "Zip Code" required>
+                        <label>E-Mail Address</label>
+                        <input type="email" id = "emailkart" placeholder = "Email Address" required>
+                        <label>Shipping Options</label>
+                        <input type="text", list="shippingList" placeholder = "Shipping" required>
+                        <datalist id="shippingList" required>
+                            <option value="Expedited Shipping (1-2 days)"></option>
+                            <option value="Standard Shipping (5-7 days)"></option>
+                        </datalist>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay" id="popupkirby">
+        <div class="wrapper">
+            <h2 id="productNamekirby">Kirby and the Forgotten Island</h2>
+            <p1>This game is a yada yada yada</p1>
+            <a href="#" class="close">&times;</a>
+            <div class="content">
+                <div class="container">
+                    <form id="myForm" onsubmit="myFunction(document.getElementById('emailkirby').value, document.getElementById('quantitykirby').value, document.getElementById('productNamekirby').innerHTML, document.getElementById('firstNamekirby').value, document.getElementById('lastNamekirby').value, document.getElementById('shippingAddresskirby').value)">
+                        </id>
+                        <label>Quantity</label>
+                        <input type="number" id ="quantitykirby" min = "1" max = "10" placeholder="Min = 1 Max = 10" required>
+                        <label>First Name</label>
+                        <input type="text" id = "firstNamekirby" placeholder = "Your First Name" required>
+                        <label>Last Name</label>
+                        <input type="text" id = "lastNamekirby" placeholder = "Your Last Name" required>
+                        <label>Phone Number</label>
+                        <input type="tel" placeholder = "Phone Number" required>
+                        <label>Shipping Address(Address/City/State)</label>
+                        <input type="text" id = "shippingAddresskirby" placeholder = "Address" required>
+                        <label>Zip Code</label>
+                        <input type="text" placeholder = "Zip Code" required>
+                        <label>E-Mail Address</label>
+                        <input type="email" id = "emailkirby" placeholder = "Email Address" required>
+                        <label>Shipping Options</label>
+                        <input type="text", list="shippingList" placeholder = "Shipping" required>
+                        <datalist id="shippingList" required>
+                            <option value="Expedited Shipping (1-2 days)"></option>
+                            <option value="Standard Shipping (5-7 days)"></option>
+                        </datalist>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
+</body>
+</html>
