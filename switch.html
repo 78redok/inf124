@@ -16,12 +16,11 @@
             });
         });
 
-        function myFunction(email, quantity, productname, firstname, lastname, address) {
+        function myFunction(email, quantity, productname, firstname, lastname, address, zipcode) {
             
-                        
-            let len = document.forms['myForm']['Zip Code'];
-            if (len != 5) {
-                alert("Zip Code must be 5 digits!");
+            let d = zipcode.toString().length;
+            if(d != 5) {
+                alert("Zip Code Must Be 5 Digits.");
                 return false;
             }
             
@@ -153,7 +152,7 @@
             <a href="#" class="close">&times;</a>
             <div class="content">
                 <div class="container">
-                    <form id="myForm" onsubmit="myFunction(document.getElementById('emailkart').value, document.getElementById('quantitykart').value, document.getElementById('productNamekart').innerHTML, document.getElementById('firstNamekart').value, document.getElementById('lastNamekart').value, document.getElementById('shippingAddresskart').value)">
+                    <form id="myForm" onsubmit="myFunction(document.getElementById('emailkart').value, document.getElementById('quantitykart').value, document.getElementById('productNamekart').innerHTML, document.getElementById('firstNamekart').value, document.getElementById('lastNamekart').value, document.getElementById('shippingAddresskart').value, document.getElementById('zipcodekart').value)">
                         </id>
                         <label>Quantity</label>
                         <input type="number" id ="quantitykart" min = "1" max = "10" placeholder="Min = 1 Max = 10" required>
@@ -166,7 +165,7 @@
                         <label>Shipping Address</label>
                         <input type="text" id = "shippingAddresskart" placeholder = "Address" required>
                         <label>Zip Code</label>
-                        <input type="text" placeholder = "Zip Code" required>
+                        <input type="text" placeholder = "Zip Code" id = "zipcodekart" required>
                         <label>E-Mail Address</label>
                         <input type="email" id = "emailkart" placeholder = "Email Address" required>
                         <label>Shipping Options</label>
@@ -189,7 +188,7 @@
             <a href="#" class="close">&times;</a>
             <div class="content">
                 <div class="container">
-                    <form id="myForm" onsubmit="myFunction(document.getElementById('emailkirby').value, document.getElementById('quantitykirby').value, document.getElementById('productNamekirby').innerHTML, document.getElementById('firstNamekirby').value, document.getElementById('lastNamekirby').value, document.getElementById('shippingAddresskirby').value)">
+                    <form id="myForm" onsubmit="myFunction(document.getElementById('emailkirby').value, document.getElementById('quantitykirby').value, document.getElementById('productNamekirby').innerHTML, document.getElementById('firstNamekirby').value, document.getElementById('lastNamekirby').value, document.getElementById('shippingAddresskirby').value, document.getElementById('zipcodekirby').value)">
                         </id>
                         <label>Quantity</label>
                         <input type="number" id ="quantitykirby" min = "1" max = "10" placeholder="Min = 1 Max = 10" required>
@@ -202,7 +201,7 @@
                         <label>Shipping Address</label>
                         <input type="text" id = "shippingAddresskirby" placeholder = "Address" required>
                         <label>Zip Code</label>
-                        <input type="text" placeholder = "Zip Code" required>
+                        <input type="text" placeholder = "Zip Code" id = "zipcodekirby" required>
                         <label>E-Mail Address</label>
                         <input type="email" id = "emailkirby" placeholder = "Email Address" required>
                         <label>Shipping Options</label>
@@ -225,7 +224,7 @@
             <a href="#" class="close">&times;</a>
             <div class="content">
                 <div class="container">
-                    <form id="myForm" onsubmit="myFunction(document.getElementById('emailmario').value, document.getElementById('quantitymario').value, document.getElementById('productNamemario').innerHTML, document.getElementById('firstNamemario').value, document.getElementById('lastNamemario').value, document.getElementById('shippingAddressmario').value)">
+                    <form id="myForm" onsubmit="myFunction(document.getElementById('emailmario').value, document.getElementById('quantitymario').value, document.getElementById('productNamemario').innerHTML, document.getElementById('firstNamemario').value, document.getElementById('lastNamemario').value, document.getElementById('shippingAddressmario').value, document.getElementById('zipcodemario').value)">
                         </id>
                         <label>Quantity</label>
                         <input type="number" id ="quantitymario" min = "1" max = "10" placeholder="Min = 1 Max = 10" required>
@@ -238,7 +237,7 @@
                         <label>Shipping Address</label>
                         <input type="text" id = "shippingAddressmario" placeholder = "Address" required>
                         <label>Zip Code</label>
-                        <input type="text" placeholder = "Zip Code" required>
+                        <input type="text" placeholder = "Zip Code" id = "zipcodemario" required>
                         <label>E-Mail Address</label>
                         <input type="email" id = "emailmario" placeholder = "Email Address" required>
                         <label>Shipping Options</label>
@@ -261,7 +260,7 @@
             <a href="#" class="close">&times;</a>
             <div class="content">
                 <div class="container">
-                    <form id="myForm" onsubmit="myFunction(document.getElementById('emailpokemon').value, document.getElementById('quantitypokemon').value, document.getElementById('productNamepokemon').innerHTML, document.getElementById('firstNamepokemon').value, document.getElementById('lastNamepokemon').value, document.getElementById('shippingAddresspokemon').value)">
+                    <form id="myForm" onsubmit="myFunction(document.getElementById('emailpokemon').value, document.getElementById('quantitypokemon').value, document.getElementById('productNamepokemon').innerHTML, document.getElementById('firstNamepokemon').value, document.getElementById('lastNamepokemon').value, document.getElementById('shippingAddresspokemon').value, document.getElementById('zipcodepokemon').value)">
                         </id>
                         <label>Quantity</label>
                         <input type="number" id ="quantitypokemon" min = "1" max = "10" placeholder="Min = 1 Max = 10" required>
@@ -274,7 +273,7 @@
                         <label>Shipping Address</label>
                         <input type="text" id = "shippingAddresspokemon" placeholder = "Address" required>
                         <label>Zip Code</label>
-                        <input type="text" placeholder = "Zip Code" required>
+                        <input type="text" placeholder = "Zip Code" id = "zipcodepokemon" required>
                         <label>E-Mail Address</label>
                         <input type="email" id = "emailpokemon" placeholder = "Email Address" required>
                         <label>Shipping Options</label>
@@ -297,7 +296,7 @@
             <a href="#" class="close">&times;</a>
             <div class="content">
                 <div class="container">
-                    <form id="myForm" onsubmit="myFunction(document.getElementById('emailstarwars').value, document.getElementById('quantitystarwars').value, document.getElementById('productNamestarwars').innerHTML, document.getElementById('firstNamestarwars').value, document.getElementById('lastNamestarwars').value, document.getElementById('shippingAddressstarwars').value)">
+                    <form id="myForm" onsubmit="myFunction(document.getElementById('emailstarwars').value, document.getElementById('quantitystarwars').value, document.getElementById('productNamestarwars').innerHTML, document.getElementById('firstNamestarwars').value, document.getElementById('lastNamestarwars').value, document.getElementById('shippingAddressstarwars').value, document.getElementById('zipcodestarwars').value)">
                         </id>
                         <label>Quantity</label>
                         <input type="number" id ="quantitystarwars" min = "1" max = "10" placeholder="Min = 1 Max = 10" required>
@@ -310,7 +309,7 @@
                         <label>Shipping Address</label>
                         <input type="text" id = "shippingAddressstarwars" placeholder = "Address" required>
                         <label>Zip Code</label>
-                        <input type="text" placeholder = "Zip Code" required>
+                        <input type="text" placeholder = "Zip Code" id = "zipcodestarwars" required>
                         <label>E-Mail Address</label>
                         <input type="email" id = "emailstarwars" placeholder = "Email Address" required>
                         <label>Shipping Options</label>
@@ -333,7 +332,7 @@
             <a href="#" class="close">&times;</a>
             <div class="content">
                 <div class="container">
-                    <form id="myForm" onsubmit="myFunction(document.getElementById('emailzelda').value, document.getElementById('quantityzelda').value, document.getElementById('productNamezelda').innerHTML, document.getElementById('firstNamezelda').value, document.getElementById('lastNamezelda').value, document.getElementById('shippingAddresszelda').value)">
+                    <form id="myForm" onsubmit="myFunction(document.getElementById('emailzelda').value, document.getElementById('quantityzelda').value, document.getElementById('productNamezelda').innerHTML, document.getElementById('firstNamezelda').value, document.getElementById('lastNamezelda').value, document.getElementById('shippingAddresszelda').value, document.getElementById('zipcodezelda').value)">
                         </id>
                         <label>Quantity</label>
                         <input type="number" id ="quantityzelda" min = "1" max = "10" placeholder="Min = 1 Max = 10" required>
@@ -346,7 +345,7 @@
                         <label>Shipping Address</label>
                         <input type="text" id = "shippingAddresszelda" placeholder = "Address" required>
                         <label>Zip Code</label>
-                        <input type="text" placeholder = "Zip Code" required>
+                        <input type="text" placeholder = "Zip Code" id = "zipcodezelda" required>
                         <label>E-Mail Address</label>
                         <input type="email" id = "emailzelda" placeholder = "Email Address" required>
                         <label>Shipping Options</label>
