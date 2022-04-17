@@ -181,8 +181,6 @@ nav #hamburger{
     min-height: 100vh;
 }
 
-
-
 .cards{
     width: 100%;
     display: flex;
@@ -199,13 +197,12 @@ nav #hamburger{
 
 .cards .switch-products h1{
     text-align: center;
-    font-size: 50px;
+    font-size: 35px;
     color: #222;
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 1px;
 }
-
 
 .card {
     display: flex;
@@ -261,6 +258,7 @@ nav #hamburger{
     margin-left: 7px;
     font-size: 15px;
     color: #f2533a;
+    text-decoration: line-through;
 }
 
 .button-group {
