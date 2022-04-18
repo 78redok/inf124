@@ -165,7 +165,7 @@ body {
   .about-section {
     padding: 50px;
     text-align: center;
-    background-color: #474e5d;
+    background-color: #202529;
     color: white;
   }
   
@@ -189,28 +189,6 @@ body {
       display: block;
     }
   }
-
-/* #aboutmain {
-    min-height: 800px;
-    background:url('mariobg.jpeg') no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    text-align: center;
-    color: #ffffff;
-    padding-bottom: 80px;
-    border-bottom: #000000 5px solid;
-}
-#aboutmain h1{
-    padding-top: 30px;
-    font-size: 55px;
-    margin-bottom: 10px;
-    color: #ffffff;
-}
-#aboutmain p1{
-    font-size: 20px;
-    color: #ffffff;
-} */
 
 /* PRODUCTS */
 /*main categories*/
