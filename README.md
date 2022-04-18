@@ -22,3 +22,15 @@ Requirements:
 (9) Custom CSS for our website has been included in each page. There is a separate CSS document containing website style and formatting.
 (10) The website has been checked for responsiveness as well as readibility for all types of devices and their respective resolutions.
 (11) Mouse movement is tracked on the page so that when the user hovers over an image, the image's size is momentarily increased until the cursor is moved away from it.
+
+References:
+Basic framework for website taken from Richard Ko's personal website developed from scratch:
+http://www.richardko.de
+Youtube Sources for pop-out and product page:
+https://www.youtube.com/watch?v=Kzjdhh_xxuc&ab_channel=LearnWeb
+https://www.youtube.com/watch?v=ZirRmvPp9QE&ab_channel=Divinector
+Various CSS lessons:
+https://www.w3schools.com/cssref/pr_text_text-decoration.asp
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_opacity
+Images source:
+https://www.gamestop.com/
